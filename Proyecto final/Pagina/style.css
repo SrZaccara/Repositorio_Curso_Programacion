@@ -1,0 +1,296 @@
+body {
+    margin: 0px;
+    margin-top: 10px;
+    overflow-x: hidden;
+    place-content: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-attachment: fixed;
+    font-family: "trebuchet ms", verdana, helvetica, arial, sans-serif;
+    }
+
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration:none;
+}
+
+/*///////////////////////////  TODOS LOS DISPOSITIVOS   ///////////////////////////*/
+/*///////////////////////////  TODOS LOS DISPOSITIVOS   ///////////////////////////*/
+/*///////////////////////////  TODOS LOS DISPOSITIVOS   ///////////////////////////*/
+
+/*header*/
+
+.logoHeader {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;  flex-direction: row; 
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding: 5px;
+}
+
+.botonMenu {
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    height: 25px;
+    background-color: transparent;
+    border: transparent;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+}
+
+.botonMenu:hover{
+    transition:all .7s ease-in-out;
+    background: rgba(0, 0, 0, 0.719);
+    color: #fff !important
+}
+
+/*fin header*/
+
+/*buscador*/
+
+.buscador {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.cajaBuscador {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/*fin buscador*/
+
+/*footer*/
+
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px;
+    background-color: #07243b;
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+/*fin footer*/
+
+/*temporadas en inicio*/
+
+.inicioTemporadas {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+}
+
+.filaTemporadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portadaTemporada {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    filter: brightness(80%);
+}
+
+.portadaTemporada:hover{
+    transition:all .5s ease-in-out;
+    filter: brightness(60%);
+}
+
+/*fin temporadas en inicio*/
+
+/*capitulos en temporadas*/
+
+.temporadaCapitulos {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+}
+
+.filaCapitulos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portadaCapitulo {
+    width: 120px;
+    display: flex;
+    margin: 5px;
+    filter: brightness(60%);
+}
+
+.portadaCapitulo:hover{
+    transition:all .5s ease-in-out;
+    filter: brightness(50%);
+}
+
+.cajaCapitulo {
+    display: flex;
+    position: relative;
+    color: white;
+}
+
+.tituloCapitulo {
+    position: absolute;
+    top: 60%;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*fin capitulos en temporadas*/
+
+/*///////////////////////////  TABLET - MIN 600px MAX 1080px   ///////////////////////////*/
+/*///////////////////////////  TABLET - MIN 600px MAX 1080px   ///////////////////////////*/
+/*///////////////////////////  TABLET - MIN 600px MAX 1060px   ///////////////////////////*/
+
+@media only screen and (min-width:600px) and (max-width:1080px){
+
+    /*temporadas*/
+
+    .inicioTemporadas {
+        grid-template-columns: 600px;
+    }
+    
+    .filaTemporadas {
+        flex-direction: row;
+    }
+    
+    /*fin temporadas*/
+
+    /*capitulos en temporadas*/
+
+    .portadaCapitulo {
+        width: 150px;
+    }
+
+    .tituloCapitulo {
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    /*fin capitulos en temporadas*/
+
+}
+
+/*///////////////////////////  DESKTOP - MIN 1080px MAX 1399PX   ///////////////////////////*/
+/*///////////////////////////  DESKTOP - MIN 1080px MAX 1399PX   ///////////////////////////*/
+/*///////////////////////////  DESKTOP - MIN 1080px MAX 1399PX   ///////////////////////////*/
+
+@media only screen and (min-width:1080px) and (max-width:1399px){
+
+    /*buscador*/
+
+    .botonMenu {
+        font-size: 16px;
+    }
+    
+    .buscador {
+        font-size: 25px;
+    }
+    
+    /*fin buscador*/
+
+    /*temporadas*/
+
+    .inicioTemporadas {
+        grid-template-columns: 1050px;
+    }
+
+    .filaTemporadas {
+        flex-direction: row;
+    }
+
+    /*fin temporadas*/
+
+    /*capitulos en temporadas*/
+
+    .portadaCapitulo {
+        width: 180px;
+    }
+
+    .tituloCapitulo {
+        top: 70%;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    /*fin capitulos en temporadas*/
+}
+
+/*///////////////////////////  DESKTOP - MIN 1400px   ///////////////////////////*/
+/*///////////////////////////  DESKTOP - MIN 1400px   ///////////////////////////*/
+/*///////////////////////////  DESKTOP - MIN 1400px   ///////////////////////////*/
+
+@media (min-width:1400px){
+
+    /*buscador*/
+
+    .botonMenu {
+        font-size: 16px;
+    }
+    
+    .buscador {
+        font-size: 25px;
+    }
+    
+    /*fin buscador*/
+
+    /*temporadas*/
+
+    .inicioTemporadas {
+        grid-template-columns: 1400px;
+    }
+
+    .filaTemporadas {
+        flex-direction: row;
+    }
+
+    /*fin temporadas*/
+
+    /*capitulos en temporadas*/
+
+    .temporadaCapitulos {
+        grid-template-columns: 1400px;
+    }
+
+    /*fin capitulos en temporadas*/
+
+    /*capitulos en temporadas*/
+
+    .portadaCapitulo {
+        width: 180px;
+    }
+
+    .tituloCapitulo {
+        top: 70%;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    /*fin capitulos en temporadas*/
+
+}
