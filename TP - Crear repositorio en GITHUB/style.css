@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background: linear-gradient(to right, #f8bbd0  , #e1bee7 , #d1c4e9 ,  #c5cae9 ,  #bbdefb , #b2ebf2 , #b2dfdb ,  #c8e6c9 ,  #dcedc8 ,  #f0f4c3 ,  #ffecb3 ,  #ffccbc );
+}
+
+.title {
+    color: black;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    size: 30px;
+    text-align: center;
+}
+
+.infoImportante {
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
