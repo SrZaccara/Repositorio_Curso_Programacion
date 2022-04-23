@@ -27,8 +27,10 @@ a:link, a:visited, a:active {
 
 
 .navbar {
+    background-color: rgba(0, 0, 0, 0.300);;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .logoHeader {
@@ -38,14 +40,14 @@ a:link, a:visited, a:active {
 }
 
 .btn-group button{
-    border-color: rgba(0, 0, 0, 0.329);
-    background-color: rgba(0, 0, 0, 0.253);
+    border-color: rgba(0, 0, 0, 0.600);
+    background-color: rgba(0, 0, 0, 0.500);
 }
 
 .btn-group button:hover{
     transition:all .5s ease-in-out;
-    border-color:  rgba(0, 0, 0, 0.438);
-    background-color: rgba(0, 0, 0, 0.438);
+    border-color:  rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.800);
 }
 
 .dropdown-menu{
@@ -54,12 +56,6 @@ a:link, a:visited, a:active {
 }
 
 /*fin header*/
-
-/*buscador*/
-
-
-
-/*fin buscador*/
 
 /*footer*/
 
@@ -89,6 +85,12 @@ a:link, a:visited, a:active {
     justify-content: center;
 }
 
+.filaTemporadaConPelis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .portadaTemporada {
     width: 100%;
     display: flex;
@@ -99,6 +101,36 @@ a:link, a:visited, a:active {
 .portadaTemporada:hover{
     transition:all .5s ease-in-out;
     filter: brightness(60%);
+}
+
+.portadaTemporadaConPelis {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    filter: brightness(80%);
+}
+
+.portadaTemporadaConPelis:hover {
+    transition:all .5s ease-in-out;
+    filter: brightness(60%);
+}
+
+.filasPelis {
+    display: row;
+    content: flex;
+    width: 100%;
+}
+
+.portadaPelis {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    filter: brightness(80%);
+}
+
+.portadaPelis:hover{
+    transition:all .5s ease-in-out;
+    filter: brightness(50%);
 }
 
 /*fin temporadas en inicio*/
@@ -162,7 +194,24 @@ a:link, a:visited, a:active {
     .filaTemporadas {
         flex-direction: row;
     }
-    
+ 
+    .filaTemporadaConPelis {
+        flex-direction: row;
+    }
+
+    .portadaTemporadaConPelis {
+        width: 50%;
+    }
+
+    .filasPelis {
+        width: 50%;
+        display: block;
+    }
+
+    .portadaPelis {
+        width: 50%;
+    }
+
     /*fin temporadas*/
 
     /*capitulos en temporadas*/
@@ -186,18 +235,6 @@ a:link, a:visited, a:active {
 
 @media only screen and (min-width:1080px) and (max-width:1399px){
 
-    /*buscador*/
-
-    .botonMenu {
-        font-size: 16px;
-    }
-    
-    .buscador {
-        font-size: 25px;
-    }
-    
-    /*fin buscador*/
-
     /*temporadas*/
 
     .inicioTemporadas {
@@ -206,6 +243,23 @@ a:link, a:visited, a:active {
 
     .filaTemporadas {
         flex-direction: row;
+    }
+
+    .filaTemporadaConPelis {
+        flex-direction: row;
+    }
+
+    .portadaTemporadaConPelis {
+        width: 50%;
+    }
+
+    .filasPelis {
+        width: 50%;
+        display: block;
+    }
+
+    .portadaPelis {
+        width: 50%;
     }
 
     /*fin temporadas*/
@@ -231,18 +285,6 @@ a:link, a:visited, a:active {
 
 @media (min-width:1400px){
 
-    /*buscador*/
-
-    .botonMenu {
-        font-size: 16px;
-    }
-    
-    .buscador {
-        font-size: 25px;
-    }
-    
-    /*fin buscador*/
-
     /*temporadas*/
 
     .inicioTemporadas {
@@ -251,6 +293,23 @@ a:link, a:visited, a:active {
 
     .filaTemporadas {
         flex-direction: row;
+    }
+
+    .filaTemporadaConPelis {
+        flex-direction: row;
+    }
+
+    .portadaTemporadaConPelis {
+        width: 50%;
+    }
+
+    .filasPelis {
+        width: 50%;
+        display: block;
+    }
+
+    .portadaPelis {
+        width: 50%;
     }
 
     /*fin temporadas*/
