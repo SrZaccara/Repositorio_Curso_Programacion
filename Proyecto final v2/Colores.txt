@@ -1,5 +1,0 @@
-#049DBF Celeste
-#033540 Azul
-#F2C849 Amarillo acento
-#D90404 Rojo
-#590202 Bordo
