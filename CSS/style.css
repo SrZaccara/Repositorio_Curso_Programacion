@@ -143,6 +143,21 @@ a:link, a:visited, a:active {
   font-size: 14px; }
 
 /*fin capitulos en temporadas*/
+
+/*form de contacto*/
+    
+.formContacto {
+  margin: 20px;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.textoContacto {
+  font-weight: 900;
+  text-align: center;
+  color: white; }
+
+/*fin de form de contacto*/
+
 /*///////////////////////////  TABLET - MIN 600px MAX 1080px   ///////////////////////////*/
 /*///////////////////////////  TABLET - MIN 600px MAX 1080px   ///////////////////////////*/
 /*///////////////////////////  TABLET - MIN 600px MAX 1060px   ///////////////////////////*/
